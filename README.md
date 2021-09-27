@@ -1,31 +1,14 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## .xls to .map
+This program will convert X,Y coordinates in meters from a .xls format to a .map format and add a text label corresponding the "ID" to the map object.
+The output will be a .txt file that can further be  used inside a .map file.
+The program will use the first and last X,Y coordinates to the corresponding "ID" in meters and add a text label
+equal to the "ID".
 
-Welcome USER_NAME,
+The user must specify input document in .xls format, id column, X coordinate column, and Y coordinate column inside the python program.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+## Future enhancements
+-Add support for specifying workbook,outputfile,id,x,and y columns outside the python code.
+-Add support for higher resolution, using more than first and last coordinate.
+-Add support for inputing the converted data directly to a .map file, usually this is an existing file that will be modified.
 
-## Reminders
-
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
+![alt text]("input_vs_output.JPG" "Title")
